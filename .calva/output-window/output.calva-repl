@@ -1,0 +1,240 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; TypeError: Cannot read properties of undefined (reading 'label')
+; Aborting jack-in.
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/gabri/Programming/clojure/in-language/in-lang/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/gabri/Programming/clojure/in-language/in-lang/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; nREPL connection failed: Error: connect ECONNREFUSED 127.0.0.1:8081
+; Failed connecting.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /home/gabri/Programming/clojure/in-language/in-lang; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:33027 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉in-lang.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉in-lang.core꞉> 
+; Jack-in done.
+clj꞉in-lang.core꞉> 
+2
+clj꞉in-lang.core꞉> 
+; Syntax error compiling def at (core.clj:9:1).
+; Too many arguments to def
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (core.clj:12:1).
+; Unable to resolve symbol: sayHi in this context
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (core.clj:12:1).
+; Unable to resolve symbol: sayHi in this context
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (core.clj:12:1).
+; Unable to resolve symbol: sayHi in this context
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (core.clj:12:1).
+; Unable to resolve symbol: sayHi in this context
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (core.clj:12:1).
+; Unable to resolve symbol: say-hi in this context
+clj꞉in-lang.core꞉> 
+; Syntax error compiling at (text.clj:6:1).
+; Unable to resolve symbol: say-hi in this context
+clj꞉in-lang.text꞉> 
+#'in-lang.text/say-hi
+clj꞉in-lang.text꞉> 
+"Hi, my name is Gabriel!"
+clj꞉in-lang.text꞉> 
+"Hi, my name is Gabriel!"
+clj꞉in-lang.text꞉> 
+"Hi, my name is Isabela!"
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (text.clj:3:1).
+; Unable to resolve symbol: doc in this context
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (text.clj:3:1).
+; Unable to resolve symbol: doc in this context
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (text.clj:5:1).
+; Unable to resolve symbol: doc in this context
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (text.clj:5:1).
+; Unable to resolve symbol: doc in this context
+clj꞉in-lang.text꞉> 
+nil
+clj꞉in-lang.text꞉> 
+; -------------------------
+; clojure.core/defn
+; ([name doc-string? attr-map? [params*] prepost-map? body] [name doc-string? attr-map? ([params*] prepost-map? body) + attr-map?])
+; Macro
+;   Same as (def name (fn [params* ] exprs*)) or (def
+;     name (fn ([params* ] exprs*)+)) with any doc-string or attrs added
+;     to the var metadata. prepost-map defines a map with optional keys
+;     :pre and :post that contain collections of pre or post conditions.
+; Spec
+;   args: (cat :fn-name simple-symbol? :docstring (? string?) :meta (? map?) :fn-tail (alt :arity-1 :clojure.core.specs.alpha/params+body :arity-n (cat :bodies (+ (spec :clojure.core.specs.alpha/params+body)) :attr-map (? map?))))
+;   ret: any?
+nil
+clj꞉in-lang.text꞉> 
+; -------------------------
+; clojure.core/defn
+; ([name doc-string? attr-map? [params*] prepost-map? body] [name doc-string? attr-map? ([params*] prepost-map? body) + attr-map?])
+; Macro
+;   Same as (def name (fn [params* ] exprs*)) or (def
+;     name (fn ([params* ] exprs*)+)) with any doc-string or attrs added
+;     to the var metadata. prepost-map defines a map with optional keys
+;     :pre and :post that contain collections of pre or post conditions.
+; Spec
+;   args: (cat :fn-name simple-symbol? :docstring (? string?) :meta (? map?) :fn-tail (alt :arity-1 :clojure.core.specs.alpha/params+body :arity-n (cat :bodies (+ (spec :clojure.core.specs.alpha/params+body)) :attr-map (? map?))))
+;   ret: any?
+nil
+clj꞉in-lang.text꞉> 
+; 1 2
+nil
+clj꞉in-lang.text꞉> 
+; 1 2
+nil
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (text.clj:1:8370).
+; Unable to resolve symbol: x in this context
+clj꞉in-lang.text꞉> 
+; 1 2
+nil
+clj꞉in-lang.text꞉> 
+nil
+clj꞉in-lang.text꞉> 
+; 1 2
+nil
+clj꞉in-lang.text꞉> 
+; 1 2
+nil
+clj꞉in-lang.text꞉> 
+; Syntax error compiling at (request.clj:6:18).
+; No such namespace: client
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (request.clj:1:8370).
+; Unable to resolve symbol: response in this context
+clj꞉in-lang.request꞉> 
+; Execution error (FileNotFoundException) at in-lang.request/eval10583$loading (form-init7346019391590512908.clj:1).
+; Could not locate clj_http/client__init.class, clj_http/client.clj or clj_http/client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (request.clj:6:18).
+; No such namespace: client
+clj꞉in-lang.request꞉> 
+2
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (request.clj:21:1).
+; Unable to resolve symbol: scrape in this context
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (request.clj:21:1).
+; Unable to resolve symbol: scrape in this context
+clj꞉in-lang.request꞉> 
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1583)
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (request.clj:18:21).
+; Unable to resolve symbol: parse-html in this context
+clj꞉in-lang.request꞉> 
+; Execution error (IllegalStateException) at in-lang.request/eval10596 (form-init7346019391590512908.clj:21).
+; Attempting to call unbound fn: #'in-lang.request/scrape
+clj꞉in-lang.request꞉> 
+; Execution error (IllegalStateException) at in-lang.request/eval10599 (form-init7346019391590512908.clj:21).
+; Attempting to call unbound fn: #'in-lang.request/scrape
+clj꞉in-lang.request꞉> 
+nil
+clj꞉in-lang.handler꞉> 
+; Syntax error compiling at (request.clj:7:20).
+; No such namespace: client
+clj꞉in-lang.request꞉> 
+; Execution error (IllegalStateException) at in-lang.request/eval10667 (form-init7346019391590512908.clj:25).
+; Attempting to call unbound fn: #'in-lang.request/scrape
+clj꞉in-lang.request꞉> 
+; Execution error (IllegalStateException) at in-lang.request/eval10670 (form-init7346019391590512908.clj:25).
+; Attempting to call unbound fn: #'in-lang.request/scrape
+clj꞉in-lang.request꞉> 
+; Syntax error compiling at (handler.clj:5:1).
+; Unable to resolve symbol: scrape in this context
+clj꞉in-lang.handler꞉> 
+; Execution error (IllegalStateException) at in-lang.handler/eval10683 (form-init7346019391590512908.clj:5).
+; Attempting to call unbound fn: #'in-lang.request/scrape
+clj꞉in-lang.handler꞉> 
+#'in-lang.core/-main
+clj꞉in-lang.core꞉> 
+#'in-lang.core/-main
+clj꞉in-lang.core꞉> 

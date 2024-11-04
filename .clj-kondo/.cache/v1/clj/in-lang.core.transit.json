@@ -1,0 +1,1 @@
+["^ ","~$-main",["^ ","~:row",5,"~:col",1,"~:varargs-min-arity",0,"~:name","^0","~:ns","~$in-lang.core","~:top-ns","^6","~:arities",["^ ","~:varargs",["^ ","~:ret","~:seq","~:min-arity",0,"~:arglist-str","[& args]"]],"~:type","~:fn"],"~:filename","/home/gabri/Programming/clojure/in-language/in-lang/src/in_lang/core.clj"]

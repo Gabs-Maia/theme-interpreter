@@ -1,0 +1,1 @@
+["^ ","~$say-hi",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$in-lang.text","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:string","~:arglist-str","[name]"]],"~:type","~:fn"],"~:filename","/home/gabri/Programming/clojure/in-language/in-lang/src/in_lang/text.clj"]
